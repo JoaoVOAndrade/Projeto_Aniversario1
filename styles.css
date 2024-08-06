@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* topbar */
+#topbar {
+  background-color: #ff1a75;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+#topbar h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#topbar h3 {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#topbar h4 {
+  color: #fff;
+  font-style: italic;
+  font-size: large;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/*body */
+
+.container-fluid {
+  background-color: #ffccff;
+  display: flex;
+  height: 100%;
+}
+
+.container-fluid #list-example {
+  margin-right: 30px;
+}
+
+#table {
+  margin-top: 30px;
+
+  padding: 0;
+}
+
+#table a {
+  background-color: #ff1a75;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #000;
+}
+
+#table a:hover {
+  background-color: #079b3f;
+  color: #fff;
+  text-decoration: underline;
+}
+
+#welcome {
+  margin: 10px;
+  text-align: center;
+}
+
+#welcome h1 {
+  margin-left: 30px;
+  width: 100vh;
+}
+
+#welcome img {
+  width: 900px;
+  margin-top: 20px;
+}
+
+#welcome p {
+  font-size: larger;
+  width: 100vh;
+  margin-top: 20px;
+}
+
+/*information*/
+#info h1 {
+  font-family: "Bree Serif", serif;
+  text-decoration: underline;
+  color: #ff1a75;
+}
+
+#info #h1 {
+  margin-top: 30px;
+}
+
+#info h3 {
+  font-family: "Bree Serif", serif;
+}
+
+#info img {
+  width: 80vh;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#info p {
+  text-align: center;
+  margin-right: 70px;
+}
+
+/*gifts */
+
+#presentList h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #ff1a75;
+  text-decoration: underline;
+}
+
+#presentList #gifts {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-grow: 1;
+  width: 90%;
+}
+
+#presentList #gifts button {
+  border-radius: 10px;
+  border-color: #000;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff1a75;
+}
+
+#presentList #gifts button:hover {
+  background-color: #079b3f;
+  text-decoration: underline;
+}
+
+#gift1 {
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: #000;
+  text-align: center;
+}
+
+#gift2 {
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: #000;
+  text-align: center;
+}
+
+#gift3 {
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: #000;
+  text-align: center;
+}
+
+/* payment */
+#pick,
+#pick1,
+#pick2 {
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+}
+
+#pick #qr50,
+#pick1 #qr50,
+#pick2 #qr50 {
+  align-items: center;
+  padding: 5px;
+  border-color: #000;
+}
+#pick img,
+#pick1 img,
+#pick2 img {
+  height: 180px;
+  width: 180px;
+}
+
+#pick #code50,
+#pick1 #code50,
+#pick2 #code50 {
+  background-color: #fff;
+  border: #000;
+}
+
+#pick #code50 input,
+#pick1 #code50 input,
+#pick2 #code50 input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+
+#pick button,
+#pick1 button,
+#pick2 button {
+  margin-bottom: 10px;
+}
+
+html button {
+  scroll-behavior: smooth;
+}
+
+/*footer*/
+footer {
+  background-color: #ff1a75;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+/*Responsivity*/
+
+@media screen and (max-width: 1200px) {
+  /* Header*/
+
+  .topbar {
+    height: 50%;
+  }
+
+  .topbar h1 {
+    font-size: 25px;
+  }
+
+  #msgtop {
+    align-items: center;
+    display: flex;
+  }
+  #msgtop h4 {
+    display: none;
+  }
+
+  /* Classes*/
+  .container-fluid {
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #welcome h1 {
+    font-size: 40px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  #welcome img {
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  #welcome p {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  #info img {
+    width: 100%;
+  }
+
+  #info h1 {
+    text-align: center;
+  }
+
+  #info p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #presentList h1 {
+    text-align: center;
+  }
+  #presentList #gifts {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 10px 0;
+  }
+  #presentList #gifts button {
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  #gifts h3 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #gift1,
+  #gift2,
+  #gift3 {
+    padding: 0;
+  }
+
+  #gift1 h3 {
+    margin-bottom: 8px;
+  }
+}
